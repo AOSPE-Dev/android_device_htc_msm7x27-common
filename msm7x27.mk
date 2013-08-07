@@ -59,7 +59,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio_policy.marvel \
-    audio.primary.marvel \
+    audio.primary \
     audio.usb.default \
     libtinyalsa \
     libaudioutils
