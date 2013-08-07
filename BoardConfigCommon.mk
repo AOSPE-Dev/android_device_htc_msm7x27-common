@@ -18,7 +18,7 @@ TARGET_SPECIFIC_HEADER_PATH := device/htc/msm7x27-common/include
 # inherit from common msm7x27 Recovery
 -include device/htc/msm7x27-common/recovery/BoardConfigCommon.mk
 
-TARGET_RECOVERY_FSTAB := device/marvel/msm7x27-common/ramdisk/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/htc/marvel/msm7x27-common/rootdir/etc/fstab.qcom
 RECOVERY_FSTAB_VERSION := 2 
 
 TARGET_ARCH := arm
@@ -49,7 +49,7 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/usb_mass_storage/lun0/f
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
 BOARD_WLAN_DEVICE                := bcm4329
 BOARD_WPA_SUPPLICANT_DRIVER      := WEXT
-BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_wext
+#BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_wext
 WIFI_DRIVER_MODULE_PATH          := "/system/lib/modules/bcm4329.ko"
 WIFI_DRIVER_MODULE_ARG           := "firmware_path=/system/etc/firmware/fw_bcm4329.bin nvram_path=/proc/calibration iface_name=wlan0"
 WIFI_DRIVER_MODULE_NAME          := "bcm4329"
